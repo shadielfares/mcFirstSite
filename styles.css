@@ -5,16 +5,16 @@ body {
   color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align items to the start (top) */
   height: 100vh;
   margin: 0;
 }
-
 .container {
   width: 80vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align items to the start (top) */
+  margin-top: 20px; /* Adjust this value as needed */
 }
 
 .content {
@@ -24,20 +24,35 @@ body {
   text-align: center;
 }
 
+/* Make sure link doesn't have under-line */
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
 
 .general {
 margin: 10px 0;
 }
 
 .manrope-font-heading {
-  font-size: 120px;
+  font-size: calc(3vh + 3vw + 3vmin);
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 .manrope-font-heading2 {
-  font-size: 60px;
+  font-size: calc(1.75vh + 1.75vw + 1.75vmin);
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -45,7 +60,7 @@ margin: 10px 0;
 }
 
 .manrope-font-body {
-  font-size: 20px;
+  font-size: calc(.70vh + 0.75vw + 0.75vmin);
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 650;
