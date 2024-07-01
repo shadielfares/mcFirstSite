@@ -66,3 +66,14 @@ margin: 10px 0;
   font-weight: 650;
   font-style: normal;
 }
+
+ul {
+
+  .manrope-font-body {
+    font-size: calc(.70vh + 0.75vw + 0.75vmin);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+  }
+}
